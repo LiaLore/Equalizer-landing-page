@@ -1,420 +1,94 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
-    margin-left: 40vw;
-    width: 375px;
     flex-direction: column;
     background-color: blanchedalmond;
-
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
 }
 
-.container {
-    flex-direction: column;
-    background-color: white;
-    width: 375px;
-    height: 1800px;
-    margin: 20px 10px;
-}
-
-.equalizer {
-    padding-top: 20px;
-    font-size: 34px;
-    margin-bottom: 30px;
-}
-
-.part1 {
-    position: relative;
-    flex-direction: column;
-    padding: 0 20px;
-    font-size: 20px;
-}
-
-.lights {
-    position: absolute;
-    width:800px;
-    height:800px;
-    margin: -250px 0 0 0px;
-    opacity: 1 00%;
-}
-
-.patern2-tablet {
+.big-main-tablet,
+.big-main-desktop,
+.orange-fb-icon,
+.patern-for-tablet {
     display: none;
 }
 
-.text1 {
-    /* padding-top: 136px; */
-    width: 327px;
-    height: 320px;
-    padding-bottom: 140px;
+.big-main-mobile {
+    position: absolute;
 }
 
-.paragraph {
-    margin-top: 30px;
+.container {
+    background: white;
+    flex-direction: column;
+}
+
+.part1 {
+    margin: 5%;
+    /* position: relative; */
+    flex-direction: column;
+
+}
+
+.equalizer {
+    font-size: 52px;
+}
+
+.text1 {
+    font-size: 28px;
 }
 
 .part2 {
     position: relative;
+    margin: 20% 0;
     flex-direction: column;
-    width: 375px;
-    height: 1024px;
     border-radius: 20px;
-}
-
-.part2-1 {
-    position: relative;
+    background-color: black;
+    /* შავი ფონის დაზუმვის ან განზუმვის სიგრძე ვერ დავარეგულირე :( (
+    /* height: 200vh; */
+    /* transform: translate(0, 100%); */
 }
 
 .mobile-back-background {
-    position: absolute;
-    width: 375px;
-    height: 600px;
-    top: 100px;
-    border-radius: 20px;
-    background-color: black;
-}
-
-.mobile {
-    position: absolute;
-    width: 209px;
-    height: 430px;
-    left: 81px;
-
+    position: relative;
 }
 
 .mobile-back {
     position: absolute;
-    width: 280px;
-    height: 420px;
-    top: 100px;
-    left: 48px;
-    border-radius: 100px 100px 0px 100px;
+    width:70%;    
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
+.mobile {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    /* top:-15%; */
+    width: 50%;
+    /* height: 430px; */
+}
 .premium-container {
     position: absolute;
-    width: 375px;
-    height: 546px;
-    top: 480px;
-    background-color:#FA7453;
-    border-radius: 20px;
-}
-
-.premium-text {
+    margin: 100% 0;
     flex-direction: column;
-    color: white;
-    display: flex;
-    margin: 20px 0 0 30px;
-}
-
-.premium-text p {
-    width: 302px;
-    height: 140px;
-    /* top: 1102px; */
-    left: 36px;
-}
-
-.premium h1 {
-    margin-bottom: 20px;
-    /* justify-content: start; */
-}
-
-.apple {
-    display: flex;
-    justify-content: center;
-    width: 296px;
-    height: 61px;
-    background-color: black;
-    /* margin-top: 10px; */
     border-radius: 20px;
-    cursor: pointer;
-}
-
-.android {
-    color: black;
-    width: 296px;
-    height: 61px;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    margin-top: 10px;
+    background: black;
+    /* height: 100vh; */
+    /* top: 480px; */
+    background-color: #FA7453;
     border-radius: 20px;
-    cursor: pointer;
 }
-
-.android-icon,
-.apple-icon {
-    display: flex;
-    align-self: center;
-
-    width: 180px;
-    height: 32px;
-}
-
-.android-icon p {
-    padding: 0 10px;
-}
-
-.apple-icon p {
-    padding: 0 10px;
-}
-
-span {
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.premium-text p {
-    margin: 10px 0 -20px 0;
-}
-
 .part3 {
-    padding: 0 20px;
-    font-size: 20px;
-    width: 327px;
-    height: 169px;
-    top: 1612px;
+    position: relative;
+    margin: 5%;
 }
 
 .part4 {
-    display: flex;
-    padding-top: 30px;
-    width: 100px;
-    height: 20px;
-    margin-left: 24px;
-    justify-content: space-between;
-}
-.icon-facebook, .icon-instagram, .icon-twitter{
-    cursor: pointer;
-}
-.orange-fb-icon{
-    display: none;
-}
-@media (min-width: 768px) {
-    .container {
-        background-color: white;
-        width: 768px;
-    }
-
-    .patern2-tablet {
-        display: inline;
-        position: absolute;
-        width: 267px;
-        height: 400px;
-        margin-left: 537px;
-    }
-
-    .text1 {
-        width: 520px;
-        font-size: 32px;
-        height: 332px;
-        margin-left: 39px;
-    }
-
-    .text1 p {
-        font-size: 18px;
-    }
-
-    .lights {
-        width: 800px;
-        height: 800px;
-        top: 250px;
-        margin-left: 345px;
-        opacity: 100%;
-        /* opacity: 15% isn't visible; */
-    }
-
-    .mobile-back-background {
-        width: 696px;
-        height: 600px;
-        /* top: 100px; */
-        margin-left: 33px;
-    }
-
-    .mobile {
-        width: 270px;
-        height: 556px;
-        margin-left: 60px;
-    }
-
-    .mobile-back {
-        width: 280px;
-        height: 420px;
-        margin-left: 262px;
-    }
-
-    .premium-container {
-        width: 399px;
-        margin-left: 272px;
-        margin-top: -150px;
-        padding-top: 20px;
-    }
-
-    .premium-text p {
-        font-size: 18px;
-        margin-bottom: -20px;
-    }
-
-    .android-icon,
-    .apple-icon {
-        width: 200px;
-        height: 32px;
-    }
-
-    .premium-btn {
-        margin-top: -40px;
-    }
-
-    .part3 {
-        margin-top: -60px;
-        font-size: 18px;
-        width: 336px;
-        /* height: 143px; */
-        top: 1612px;
-    }
-
-    .part4 {
-        margin-top: -110px;
-        margin-left: 596px;
-    }
-
-    .equalizer {
-        font-size: 42px;
-        margin-bottom: 10px;
-    }
-
-}
-
-@media (min-width: 1440px) {
-    .container {
-        width: 1440px;
-        background-color: white;
-    }
-
-    .patern2-tablet {
-        width:312px;
-        height: 468px;
-        margin: -40px 0 0 1120px;
-    }
-
-    .text1 {
-        width: 1015px;
-        font-size: 48px;
-        height: 176px;
-        margin: 165px;
-        padding-top:50px;
-    }
-
-    .text1 p {
-        font-size: 24px;
-        width:825px;
-        height: 102px;
-    }
-
-    .lights {
-        width: 800px;
-        height: 800px;
-        margin-top: -350px;
-        margin-left: 700px;
-    }
-
-    .mobile-back-background {
-        width: 1110px;
-        height: 600px;
-        margin-top: 160px;
-        margin-left: 165px;
-    }
-
-    .mobile {
-        width: 312px;
-        height: 642px;
-        margin: 40px 0 0 200px;
-    }
-
-    .part2{
-        margin-top: 100px;
-    }
-    .mobile-back {
-        width: 310px;
-        height: 468px;
-        margin: 130px 0 0 465px;
-    }
-
-    .premium-container {
-        width: 446px;
-        height: 600px;
-        margin: -130px 0 0 750px;
-        padding-top: 40px;
-    }
-
-    .premium-text p {
-        width: 333px;
-        height: 170px;
-        font-size: 22px;
-        margin: 20px 0 -30px 20px;
-        padding: 20px 0 -50px 0;
-    }
-    .premium-text h1{
-        margin-left: 20px;
-    }
-    .premium-btn{
-        width: 333px;
-        margin-top: 30px;
-    }
-    .android{
-        width: 333px;
-        margin-left: 20px;
-    }
-.apple{
-    width: 333px;
-    margin-left: 20px;
-}
-    .android-icon{
-        width: 200px;
-        margin-left: 50px;
-
-    }
-    .apple-icon {
-        margin-left: 65px;
-    }
-    .android-icon:hover{
-        width: 200px;
-        margin-left: 50px;
-
-    }
-    .apple-icon:hover{
-        margin-left: 60px;
-    }
-    .android:hover{
-        background-color: #66E2DC;
-    }
-    .apple:hover{
-        background-color:#FFB964 ;
-    }
-    
-    .android-icon p{
-        margin: 10px 0 0 -5px;
-        font-size: 16px;
-    }
-    .apple-icon p {
-        margin: 10px 0 0 -5px;
-        font-size: 18px;
-    }
-    .part3 {
-        width: 1110px;
-        height: 79px;
-        margin-left: 165px;
-    }
-    .part3 p{
-        width: 366px;
-        height: 79px;
-        margin: -50px 0 0 285px;
-    }
-    .part3 .equalizer{
-        margin-top: 100px;
-    }
-    .part4 {
-        margin: -80px 0 0 1100px;
-    }
+    margin: 5%;
+    position: relative;
 }

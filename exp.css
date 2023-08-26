@@ -1,0 +1,77 @@
+/* Setting up general styles for the entire page */
+body {
+    margin: 0; /* Remove default margin */
+    color: #fffffb; /* Text color */
+    text-align: center; /* Center-align text */
+    font-size: 1.2rem; /* Font size */
+    font-weight: bold; /* Font weight */
+}
+
+/* Styling for sections on the page */
+section {
+    padding: 30vh 0; /* Vertical padding for sections */
+}
+
+/* Styling for the circular icon container */
+.one__icon {
+    background: rgba(0, 0, 0, .3); /* Semi-transparent black background */
+    color: rgba(0, 0, 0, .3); /* Semi-transparent black color for icon */
+    width: 100px; /* Width of the icon container */
+    height: 100px; /* Height of the icon container */
+    margin: 0 auto; /* Center the container horizontally */
+    border-radius: 50%; /* Create a circular shape */
+    display: grid; /* Use grid layout for centering */
+    place-items: center; /* Center content both horizontally and vertically */
+    font-size: 2em; /* Font size for the icon */
+}
+
+/* Styling for the first section */
+.one {
+    background: #ffc145; /* Background color */
+    position: relative; /* Establish relative positioning */
+}
+
+/* Pseudo-elements to create diagonal colored shapes at the bottom */
+.one::after,
+.one::before {
+    position: absolute; /* Absolutely position elements */
+    content: ''; /* Empty content */
+    width: 150px; /* Width of the shape */
+    height: 150px; /* Height of the shape */
+    background: #ffc145; /* Background color */
+    bottom: -1em; /* Position slightly below the section */
+    z-index: 20; /* Stack these elements above the content */
+}
+
+/* Skew the ::before element to create a diagonal shape */
+.one::before {
+    left: 50%; /* Position to the left */
+    transform: skew(0, -20deg); /* Skew the shape diagonally */
+}
+
+/* Skew the ::after element to create a diagonal shape */
+.one::after {
+    right: 50%; /* Position to the right */
+    transform: skew(0, 20deg); /* Skew the shape diagonally */
+}
+
+/* Styling for the second section */
+.two {
+    background: #ff6b6c; /* Background color */
+    margin-bottom: -10vw; /* Negative margin for overlap */
+    position: relative; /* Establish relative positioning */
+    z-index: 10; /* Stack above the previous section */
+    /* Clip-path creates a polygonal shape for the bottom */
+    /* clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20vw), 0 100%); */
+    bottom: -10vw; /* Adjust positioning */
+}
+
+/* Styling for the image in the second section */
+.two__image {
+    clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%); /* Clip-path polygon shape */
+}
+
+/* Styling for the third section */
+.three {
+    background: #5b5f97; /* Background color */
+}
