@@ -1,340 +1,147 @@
-@media(max-width: 667px) {
-    * {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Nothing+You+Could+Do&family=Poppins:wght@400;600&display=swap');
 
-    .big-main-tablet,
-    .big-main-desktop,
-    .orange-fb-icon,
-    .patern-for-tablet {
-        display: none;
-    }
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
 
-    .big-main-mobile {
-        position: absolute;
-        left: 20%;
-    }
+  body {
+      font-family: IBM Plex Sans;
+  }
 
-    .container {
-        /* background: rgb(40, 231, 234); */
-        width: 90%;
-        padding: 10%;
-    }
+  .big-main-tablet,
+  .big-main-desktop,
+  .orange-fb-icon,
+  .patern-for-tablet {
+      display: none;
+  }
 
-    .part1 {
-        position: relative;
-        flex-direction: column;
+  .big-main-mobile {
+      position: absolute;
+      margin:-40% 0 0 15%;
+  }
 
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .equalizer {
-        font-size: 52px;
-    }
+  .part1 {
+      position: relative;
+      flex-direction: column;
+      margin: 0 5%;
+  }
 
-    .text1 {
-        font-size: 28px;
-    }
+  .header {
+      font-size: 38px;
+  }
 
-    .part2 {
-        flex-direction: column;
-        background-color: black;
-        border-radius: 20px;
-        margin-top: 20%;
-    }
+  .text1 {
+      font-size: 16px;
+  }
 
-    .mobile-back {
-        position: relative;
-        width: 70%;
-        margin-left: 20%;
-    }
+  .part2 {
+      flex-direction: column;
+      background-color: black;
+      border-radius: 20px;
+      margin-top: 20%;
+  }
 
-    .mobile {
-        position: absolute;
-        width: 50%;
-        margin-left: -60%;
-        margin-top: -15%;
-    }
+  .mobile-back {
+      position: relative;
+      width: 70%;
+      margin-left: 20%;
+      z-index: 0;
+  }
 
-    .premium-container {
-        flex-direction: column;
-        background-color: #FA7453;
-        border-radius: 20px;
-        padding-bottom: 10%;
-    }
+  .mobile {
+      position: absolute;
+      width: 50%;
+      margin-left: -60%;
+      margin-top: -15%;
+  }
 
-    .premium-text {
-        flex-direction: column;
-        color: white;
-        display: flex;
-        margin: 20px 0 0 30px;
-    }
+  .premium-container {
+      position: absolute;
+      background-color: #FA7453;
+      border-radius: 12px;
+      color: #FCFAF9;
+      margin-top: -50px;
+      padding: 5% 7% 10% 7%;
+  }
 
-    .premium-text p {
-        width: 90%;
-        font-size: 24px;
-    }
+  .premium-text p {
+      font-size: 24px;
+  }
 
-    .premium-text h1 {
-        margin: 30px 0;
-    }
+  .premium-text h1 {
+      margin: 30px 0;
+  }
 
-    .apple {
-        background-color: black;
-        color: white;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        width: 80%;
-        height: 0.5%;
-        cursor: pointer;
-    }
+  .apple {
+      width: 95%;
+      height: 61px;
+      background: #191826;
+      color: white;
+      border-radius: 12px;
+      font-Weight: 700;
+      font-Size: 18px;
+      Line-height: 32px;
+      margin-bottom: 16px;
+  }
 
-    .android {
-        background-color: white;
-        color: black;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        margin: 30px 0;
-        width: 80%;
-        height: 0.5%;
-        cursor: pointer;
+  .android {
+      width: 95%;
+      height: 61px;
+      background: #FCFAF9;
+      border-radius: 12px;
+      Font: IBM Plex Sans;
+      font-Weight: 700;
+      font-Size: 18px;
+      Line-height: 32px;
+  }
 
-    }
+  .android-icon,
+  .apple-icon {
 
-    .android-icon,
-    .apple-icon {
-        width: 30px;
-        height: 30px;
-        padding-left: 30%;
-    }
+      padding-right: 10px;
+  }
 
-    .android>p,
-    .apple>p {
-        font-size: 1em;
-        padding: 0 10px;
-    }
+  .four-dollar {
+      font-size: 48px;
+      font-weight: bold;
+  }
 
-    .four-dollar {
-        font-size: 48px;
-        font-weight: bold;
-    }
+  .premium-text p {
+      margin: 20px 0;
+  }
 
-    .premium-text p {
-        margin: 20px 0;
-    }
+  .part3{
+    margin: 550px 24px 24px 24px;
 
-    .equalizer2 {
-        font-size: 5em;
-        padding: 0.5em 0;
-    }
+  }
+  .logo{
+    width: 170px;
+    margin: 52px 0;
+  }
+  .part3>p {
+      font-size: 16px;
+  }
 
-    .part3>p {
-        font-size: 2.5em;
-    }
+  .part4 {
+      width: 30%;
+      justify-content: space-between;
+      margin: 5%;
+  }
 
-    .mail-b {
-        font-size: 0.7em;
-    }
-
-    .part4 {
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
-        margin: 30px 0;
-    }
-
-    .icon-facebook,
-    .icon-instagram,
-    .icon-twitter {
-        width: 27%;
-        padding: 3%;
-        cursor: pointer;
-    }
-}
-
-@media(max-width:1023px) {
-    * {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-    .container {
-        flex-direction: column;
-        /* background-color: aquamarine; */
-        /* padding:20%; */
-    }
-
-    .part1 {
-        padding: 5%;
-        /* width: 90%; */
-        flex-direction: column;
-    }
-
-    .big-main-tablet {
-        position: absolute;
-        width: 100%;
-        margin: -20% 0 0 -30%;
-    }
-
-    .patern-for-tablet {
-        position: absolute;
-        width: 400px;
-        height: 550px;
-        margin-left: 64.2%;
-        margin-top: -11%;
-        clip-path: polygon(0 10%, 79% 10%, 79% 100%, 0 100%); 
-    }
+  .icon-facebook,
+  .icon-instagram,
+  .icon-twitter {
+      width: 27%;
+      padding: 3%;
+      cursor: pointer;
+  }
 
 
-    .big-main-desktop,
-    .big-main-mobile,
-    .orange-fb-icon {
-        display: none;
-    }
-
-    .equalizer {
-        font-size:2.5em;
-        padding: 5% 0 10% 0;
-    }
-
-    .text1 {
-        font-size: 2.7em;
-        width: 70%;
-    }
-
-    .part2 {
-        flex-direction: column;
-        background-color: black;
-        border-radius: 20px;
-        width: 90%;
-        margin: 20% 5%;
-    }
-
-    .mobile-back {
-        width: 40%;
-        margin-left: 40%;
-        margin-top: -5%;
-        padding-bottom: 10%;
-    }
-
-    .mobile {
-        position: absolute;
-        width: 35%;
-        margin-left: -60%;
-        margin-top: -15%;
- 
-    }
-
-    .premium-container {
-        position: absolute;
-        flex-direction: column;
-        background-color: #FA7453;
-        border-radius: 20px;
-        padding-bottom: 4%;
-        width: 45%;
-        margin-top: -40%;
-        margin-left: 35%;
-    }
-
-    .premium-text {
-        flex-direction: column;
-        color: white;
-        display: flex;
-        margin: 20px 0 0 30px;
-        width: 80%;
-        font-size: 20px;
-    }
-
-    .premium-text h1 {
-        margin: 20px 0;
-    }
-
-    .apple {
-        background-color: black;
-        color: white;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        height: 0.5%;
-        cursor: pointer;
-    }
-
-    .android {
-        background-color: white;
-        color: black;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        margin: 30px 0;
-        height: 0.5%;
-        cursor: pointer;
-
-    }
-    
-    .apple-icon {
-        width: 30px;
-        height: 30px;
-        padding-left: 28%;
-    }
-    .android-icon{
-        width: 30px;
-        height: 30px;
-        padding-left: 24%;
-
-    }
-
-    .android>p,
-    .apple>p {
-        font-size: 1em;
-        padding: 0 10px;
-    }
-
-    .four-dollar {
-        font-size: 48px;
-        font-weight: bold;
-    }
-
-    .premium-text p {
-        margin: 20px 0;
-    }
-
-    .equalizer2 {
-        font-size: 5em;
-        padding-top: 0.5em;
-        padding-left: 5%;
-    }
-
-    .part3>p {
-        font-size: 2em;
-        width: 50%;
-        padding-left: 5%;
-    }
-
-    .mail-b {
-        font-size: 0.7em;
-    }
-
-    .part4 {
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
-        margin: -20% 0 0 60%;
-    }
-
-    .icon-facebook,
-    .icon-instagram,
-    .icon-twitter {
-        width: 27%;
-        padding: 3%;
-        cursor: pointer;
-    }
-
-
-
-
-
-}
+  @media(min-width: 768px) {}
