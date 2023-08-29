@@ -89,6 +89,8 @@
       font-Size: 18px;
       Line-height: 32px;
       margin-bottom: 16px;
+      border-width: 0;
+      cursor: pointer;
   }
 
   .android {
@@ -100,6 +102,8 @@
       font-Weight: 700;
       font-Size: 18px;
       Line-height: 32px;
+      border-width: 0;
+      cursor: pointer;
   }
 
   .android-icon,
@@ -122,7 +126,8 @@
 
   }
 
-  .logo {
+  .logo,
+  .logo2 {
       width: 170px;
       margin: 52px 0;
   }
@@ -147,10 +152,6 @@
 
 
   @media(min-width: 768px) {
-      body {
-          background-color: aqua;
-      }
-
       .part1 {
           position: relative;
           flex-direction: row;
@@ -167,9 +168,10 @@
           clip-path: polygon(0 0, 79% 0, 79% 100%, 0 100%);
       }
 
-      .logo {
+      .logo,
+      .logo2 {
           top: 62px;
-          padding-left:33px;
+          padding-left: 33px;
       }
 
       .text1 h1 {
@@ -186,8 +188,8 @@
       }
 
       .text1 p {
-        width: 520px;
-        height: 182px;
+          width: 520px;
+          height: 182px;
           font-family: IBM Plex Sansc;
           font-size: 18px;
           line-height: 28px;
@@ -239,11 +241,13 @@
       .premium-text h1 {
           margin: 32px 0;
       }
-.footer{
-    width: 100%;
-    display: flex;
 
-}
+      .footer {
+          width: 100%;
+          display: flex;
+
+      }
+
       .part3 {
           margin: 50px 33px;
 
@@ -256,7 +260,7 @@
       }
 
       .part4 {
-        position: absolute;
+          position: absolute;
           width: 100px;
           height: 20px;
           left: 550px;
@@ -270,4 +274,147 @@
           cursor: pointer;
       }
 
+      @media (max-width: 1440px) {
+          body {
+              margin: 62px 165px;
+              background-color: aquamarine;
+          }
+
+          .patern-for-tablet {
+              display: inline;
+              position: absolute;
+              width: 312px;
+              height: 468px;
+              top: -100px;
+              left: 1128px;
+              clip-path: polygon(0 10%, 79% 10%, 79% 100%, 0 100%);
+          }
+
+          .logo, .logo2 {
+              width: 146px;
+          }
+
+          .text1 h1 {
+              font-family: IBM Plex Sans;
+              width: 1015px;
+              height: 176px;
+              top: 189px;
+              font-size: 88px;
+              line-height: 88px;
+              letter-spacing: -1px;
+              margin-bottom: 30px;
+          }
+
+          .text1 p {
+              width: 825px;
+              height: 102px;
+              font-size: 20px;
+              line-height: 34px;
+          }
+
+          .part2 {
+              position: relative;
+              background-color: black;
+              border-radius: 20px;
+              width: 696px;
+              height: 600px;
+              left: 33px;
+              top: -50px;
+          }
+
+          .big-main-mobile,
+          .big-main-tablet {
+              display: none;
+          }
+
+          .big-main-desktop {
+              display: inline;
+              position: absolute;
+              margin-top: -200px;
+              margin-left: -200px;
+          }
+
+          .part2 {
+              width: 1100px;
+              height: 600px;
+          }
+
+          .mobile-back {
+              position: absolute;
+              width: 312px;
+              height: 468px;
+              left: 111px;
+              top: -20px;
+
+          }
+
+          .mobile {
+              position: absolute;
+              width: 312px;
+              height: 642px;
+              margin-left: 102px;
+          }
+
+          .premium-container {
+              width: 446px;
+              height: 615px;
+              margin-top: 180px;
+              margin-left: 569px;
+          }
+
+          .premium-text p {
+              font-size: 20px;
+              margin: 0 -24px;
+              margin-bottom: 20px;
+
+          }
+
+          .premium-text h1 {
+              font-size: 52px;
+              margin: 0 -24px;
+              margin-bottom: 30px;
+
+          }
+
+          .apple:hover {
+              background-color: #66E2DC;
+          }
+
+          .android:hover {
+              background-color: #FFB964;
+          }
+          .logo2{
+            margin-top: 1500px;
+            position: absolute;
+          }
+          .footer {
+              width: 65%;
+              display: flex;
+              margin-left: 33%;
+              margin-top: 110px;
+          }
+
+          .part3 {
+              margin: 50px 33px;
+          }
+
+          .part3>p {
+              font-size: 16px;
+              width: 336px;
+              height: 79px;
+          }
+
+          .part4 {
+              position: absolute;
+              width: 100px;
+              height: 20px;
+              margin-left: 33%;
+          }
+      }
   }
+
+
+
+  /* Notes: part2 (desctop version) is not flexable. 
+            In an original version max width is 1440px.
+            I need to fix footer.
