@@ -19,12 +19,12 @@
 
   .big-main-mobile {
       position: absolute;
-      margin:-40% 0 0 15%;
+      margin: -40% 0 0 15%;
   }
 
   .container {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
   }
 
   .part1 {
@@ -117,14 +117,16 @@
       margin: 20px 0;
   }
 
-  .part3{
-    margin: 550px 24px 24px 24px;
+  .part3 {
+      margin: 550px 24px 24px 24px;
 
   }
-  .logo{
-    width: 170px;
-    margin: 52px 0;
+
+  .logo {
+      width: 170px;
+      margin: 52px 0;
   }
+
   .part3>p {
       font-size: 16px;
   }
@@ -144,4 +146,128 @@
   }
 
 
-  @media(min-width: 768px) {}
+  @media(min-width: 768px) {
+      body {
+          background-color: aqua;
+      }
+
+      .part1 {
+          position: relative;
+          flex-direction: row;
+          margin: 0 0 70px 0;
+      }
+
+      .patern-for-tablet {
+          display: inline;
+          position: absolute;
+          width: 267px;
+          height: 400px;
+          top: -32px;
+          left: 537px;
+          clip-path: polygon(0 0, 79% 0, 79% 100%, 0 100%);
+      }
+
+      .logo {
+          top: 62px;
+          padding-left:33px;
+      }
+
+      .text1 h1 {
+          font-family: IBM Plex Sans;
+          width: 520px;
+          height: 182px;
+          margin-left: 33px;
+          top: 189px;
+          font-size: 64px;
+          font-weight: 700;
+          line-height: 64px;
+          letter-spacing: 0.73px;
+          margin-bottom: 30px;
+      }
+
+      .text1 p {
+        width: 520px;
+        height: 182px;
+          font-family: IBM Plex Sansc;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 400;
+          margin-left: 39px;
+      }
+
+      .part2 {
+          position: relative;
+          background-color: black;
+          border-radius: 20px;
+          width: 696px;
+          height: 600px;
+          left: 33px;
+          top: -100px;
+      }
+
+      .big-main-mobile {
+          display: none;
+      }
+
+      .mobile-back {
+          position: absolute;
+          width: 280px;
+          height: 420px;
+          left: 90px;
+          top: -20px;
+
+      }
+
+      .mobile {
+          position: absolute;
+          width: 270px;
+          height: 556px;
+          margin-left: 64px;
+      }
+
+      .premium-container {
+          width: 399px;
+          height: 546px;
+          margin-top: 180px;
+          margin-left: 239px;
+      }
+
+      .premium-text p {
+          font-size: 18px;
+      }
+
+      .premium-text h1 {
+          margin: 32px 0;
+      }
+.footer{
+    width: 100%;
+    display: flex;
+
+}
+      .part3 {
+          margin: 50px 33px;
+
+      }
+
+      .part3>p {
+          font-size: 16px;
+          width: 336px;
+          height: 79px;
+      }
+
+      .part4 {
+        position: absolute;
+          width: 100px;
+          height: 20px;
+          left: 550px;
+      }
+
+      .icon-facebook,
+      .icon-instagram,
+      .icon-twitter {
+          width: 27%;
+          padding: 3%;
+          cursor: pointer;
+      }
+
+  }
