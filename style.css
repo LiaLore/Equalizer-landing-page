@@ -4,18 +4,19 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-  }
-
-  body {
       font-family: IBM Plex Sans;
   }
 
-  .big-main-tablet,
+  body {
+      /* background-color: aqua; */
+  }
+
+  /* .big-main-tablet,
   .big-main-desktop,
   .orange-fb-icon,
   .patern-for-tablet {
       display: none;
-  }
+  } */
 
   .big-main-mobile {
       position: absolute;
@@ -28,7 +29,8 @@
   }
 
   .part1 {
-      position: relative;
+      background-image: url(./assets/bg-main-mobile.png);
+      background-repeat: no-repeat;
       flex-direction: column;
       margin: 0 5%;
   }
@@ -42,33 +44,33 @@
   }
 
   .part2 {
+      position: relative;
+      display: flex;
       flex-direction: column;
       background-color: black;
-      border-radius: 20px;
-      margin-top: 20%;
+      background-position-x: center;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      margin-top: 25%;
   }
 
-  .mobile-back {
-      position: relative;
-      width: 70%;
-      margin-left: 20%;
-      z-index: 0;
-  }
 
+  .mobile-back{
+    width: 70%;
+    align-self: center;
+  }
   .mobile {
       position: absolute;
+      align-self: center;
       width: 50%;
-      margin-left: -60%;
-      margin-top: -15%;
+      top: -100px;
   }
 
   .premium-container {
-      position: absolute;
       background-color: #FA7453;
       border-radius: 12px;
       color: #FCFAF9;
-      margin-top: -50px;
-      padding: 5% 7% 10% 7%;
+      padding: 20px 20px 50px 20px;
   }
 
   .premium-text p {
@@ -80,7 +82,7 @@
   }
 
   .apple {
-      width: 95%;
+      width: 100%;
       height: 61px;
       background: #191826;
       color: white;
@@ -94,11 +96,10 @@
   }
 
   .android {
-      width: 95%;
+      width: 100%;
       height: 61px;
       background: #FCFAF9;
       border-radius: 12px;
-      Font: IBM Plex Sans;
       font-Weight: 700;
       font-Size: 18px;
       Line-height: 32px;
@@ -121,15 +122,18 @@
       margin: 20px 0;
   }
 
-  .part3 {
-      margin: 550px 24px 24px 24px;
+  .footer {
+    margin: 0 5%;
+  }
 
+  .part3 {
+    margin-bottom: 20px ;
   }
 
   .logo,
   .logo2 {
       width: 170px;
-      margin: 52px 0;
+      margin: 52px auto 10px;
   }
 
   .part3>p {
@@ -139,7 +143,8 @@
   .part4 {
       width: 30%;
       justify-content: space-between;
-      margin: 5%;
+      margin-bottom: 20px;
+
   }
 
   .icon-facebook,
@@ -149,272 +154,3 @@
       padding: 3%;
       cursor: pointer;
   }
-
-
-  @media(min-width: 768px) {
-      .part1 {
-          position: relative;
-          flex-direction: row;
-          margin: 0 0 70px 0;
-      }
-
-      .patern-for-tablet {
-          display: inline;
-          position: absolute;
-          width: 267px;
-          height: 400px;
-          top: -32px;
-          left: 537px;
-          clip-path: polygon(0 0, 79% 0, 79% 100%, 0 100%);
-      }
-
-      .logo,
-      .logo2 {
-          top: 62px;
-          padding-left: 33px;
-      }
-
-      .text1 h1 {
-          font-family: IBM Plex Sans;
-          width: 520px;
-          height: 182px;
-          margin-left: 33px;
-          top: 189px;
-          font-size: 64px;
-          font-weight: 700;
-          line-height: 64px;
-          letter-spacing: 0.73px;
-          margin-bottom: 30px;
-      }
-
-      .text1 p {
-          width: 520px;
-          height: 182px;
-          font-family: IBM Plex Sansc;
-          font-size: 18px;
-          line-height: 28px;
-          font-weight: 400;
-          margin-left: 39px;
-      }
-
-      .part2 {
-          position: relative;
-          background-color: black;
-          border-radius: 20px;
-          width: 696px;
-          height: 600px;
-          left: 33px;
-          top: -100px;
-      }
-
-      .big-main-mobile {
-          display: none;
-      }
-
-      .mobile-back {
-          position: absolute;
-          width: 280px;
-          height: 420px;
-          left: 90px;
-          top: -20px;
-
-      }
-
-      .mobile {
-          position: absolute;
-          width: 270px;
-          height: 556px;
-          margin-left: 64px;
-      }
-
-      .premium-container {
-          width: 399px;
-          height: 546px;
-          margin-top: 180px;
-          margin-left: 239px;
-      }
-
-      .premium-text p {
-          font-size: 18px;
-      }
-
-      .premium-text h1 {
-          margin: 32px 0;
-      }
-
-      .footer {
-          width: 100%;
-          display: flex;
-
-      }
-
-      .part3 {
-          margin: 50px 33px;
-
-      }
-
-      .part3>p {
-          font-size: 16px;
-          width: 336px;
-          height: 79px;
-      }
-
-      .part4 {
-          position: absolute;
-          width: 100px;
-          height: 20px;
-          left: 550px;
-      }
-
-      .icon-facebook,
-      .icon-instagram,
-      .icon-twitter {
-          width: 27%;
-          padding: 3%;
-          cursor: pointer;
-      }
-
-      @media (max-width: 1440px) {
-          body {
-              margin: 62px 165px;
-              background-color: aquamarine;
-          }
-
-          .patern-for-tablet {
-              display: inline;
-              position: absolute;
-              width: 312px;
-              height: 468px;
-              top: -100px;
-              left: 1128px;
-              clip-path: polygon(0 10%, 79% 10%, 79% 100%, 0 100%);
-          }
-
-          .logo, .logo2 {
-              width: 146px;
-          }
-
-          .text1 h1 {
-              font-family: IBM Plex Sans;
-              width: 1015px;
-              height: 176px;
-              top: 189px;
-              font-size: 88px;
-              line-height: 88px;
-              letter-spacing: -1px;
-              margin-bottom: 30px;
-          }
-
-          .text1 p {
-              width: 825px;
-              height: 102px;
-              font-size: 20px;
-              line-height: 34px;
-          }
-
-          .part2 {
-              position: relative;
-              background-color: black;
-              border-radius: 20px;
-              width: 696px;
-              height: 600px;
-              left: 33px;
-              top: -50px;
-          }
-
-          .big-main-mobile,
-          .big-main-tablet {
-              display: none;
-          }
-
-          .big-main-desktop {
-              display: inline;
-              position: absolute;
-              margin-top: -200px;
-              margin-left: -200px;
-          }
-
-          .part2 {
-              width: 1100px;
-              height: 600px;
-          }
-
-          .mobile-back {
-              position: absolute;
-              width: 312px;
-              height: 468px;
-              left: 111px;
-              top: -20px;
-
-          }
-
-          .mobile {
-              position: absolute;
-              width: 312px;
-              height: 642px;
-              margin-left: 102px;
-          }
-
-          .premium-container {
-              width: 446px;
-              height: 615px;
-              margin-top: 180px;
-              margin-left: 569px;
-          }
-
-          .premium-text p {
-              font-size: 20px;
-              margin: 0 -24px;
-              margin-bottom: 20px;
-
-          }
-
-          .premium-text h1 {
-              font-size: 52px;
-              margin: 0 -24px;
-              margin-bottom: 30px;
-
-          }
-
-          .apple:hover {
-              background-color: #66E2DC;
-          }
-
-          .android:hover {
-              background-color: #FFB964;
-          }
-          .logo2{
-            margin-top: 1500px;
-            position: absolute;
-          }
-          .footer {
-              width: 65%;
-              display: flex;
-              margin-left: 33%;
-              margin-top: 110px;
-          }
-
-          .part3 {
-              margin: 50px 33px;
-          }
-
-          .part3>p {
-              font-size: 16px;
-              width: 336px;
-              height: 79px;
-          }
-
-          .part4 {
-              position: absolute;
-              width: 100px;
-              height: 20px;
-              margin-left: 33%;
-          }
-      }
-  }
-
-
-
-  /* Notes: part2 (desctop version) is not flexable. 
-            In an original version max width is 1440px.
-            I need to fix footer.
